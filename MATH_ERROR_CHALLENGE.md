@@ -11,7 +11,7 @@ You are given **242 math problems** from AIMO, AMC, AIME, PUMaC, and HMMT compet
 - A 5-step Chain-of-Thought solution
 - The correct final answer
 
-**21% of solutions contain exactly ONE error** at a specific step. Your task is to:
+**17% of solutions contain exactly ONE error** at a specific step (42 out of 242). Your task is to:
 1. Detect IF there is an error (`has_error`: 0 or 1)
 2. Identify WHICH STEP contains the error (`error_step`: 1-5)
 
