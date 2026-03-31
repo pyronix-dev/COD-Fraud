@@ -36,19 +36,28 @@ You are given **242 math problems** from AIMO, AMC, AIME, PUMaC, and HMMT compet
 
 ## Data Fields
 
+### Identifiers
+| Field | Type | Description |
+|-------|------|-------------|
+| `statement_id` | int | Unique row identifier (0 to N-1) |
+| `source_id` | string | Problem ID (e.g., "AMC001", "AIME003") |
+| `source` | string | Competition and year (e.g., "AMC 12A 2020") |
+
+### Problem Content
+| Field | Type | Description |
+|-------|------|-------------|
+| `statement` | string | The math problem statement |
+| `domain` | string | Subject area (Algebra, Geometry, Number Theory, Combinatorics, Probability) |
+| `correct_answer` | string | The verified correct answer |
+| `tier` | int | Difficulty level (1 = easiest, 4 = hardest) |
+| `cot` | string | 5-step Chain-of-Thought reasoning |
+
+### Targets (What You Predict)
 | Field | Type | Description | Values |
 |-------|------|-------------|--------|
-| `statement_id` | int | Unique row identifier | 0 to N-1 |
-| `statement` | string | The math problem | Text |
-| `domain` | string | Subject area | Mathematics - {Algebra, Geometry, Number Theory, Combinatorics, Probability} |
 | `has_error` | int | **Target 1**: Whether CoT contains an error | 0 = correct, 1 = error |
 | `error_step` | int | **Target 2**: Which step has the error | -1 = none, 1-5 = step number |
 | `error_type` | string | Type of error | wrong_setup, wrong_formula, calculation_error, logic_error, wrong_answer, none |
-| `correct_answer` | string | The verified correct answer | Varies |
-| `source_id` | string | Problem ID | e.g., "AMC001", "AIME003" |
-| `source` | string | Competition and year | e.g., "AMC 12A 2020", "HMMT 2019" |
-| `tier` | int | Difficulty level | 1 (easiest) to 4 (hardest) |
-| `cot` | string | 5-step Chain-of-Thought | Step-by-step reasoning |
 
 ---
 
