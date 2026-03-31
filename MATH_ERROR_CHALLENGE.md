@@ -1,4 +1,4 @@
-# Math Error Localization Challenge
+# Break the Chain: Math Error Localization Challenge
 
 ## Problem Description
 
@@ -17,13 +17,20 @@ You are given **242 math problems** from AIMO, AMC, AIME, PUMaC, and HMMT compet
 
 ### Error Types by Step
 
-| Step | Error Type | Description | Example |
-|------|------------|-------------|---------|
-| **Step 1** | wrong_setup | Incorrectly identifies approach or sets up wrong equation | "Misapply the quadratic formula" instead of "Apply..." |
-| **Step 2** | wrong_formula | Applies incorrect formula or theorem | Uses area formula for wrong shape |
-| **Step 3** | calculation_error | Makes arithmetic error in calculation | "15 × 12 = 190" (should be 180) |
-| **Step 4** | logic_error | Draws wrong conclusion from previous steps | Invalid deduction from correct premises |
-| **Step 5** | wrong_answer | States incorrect final answer | Correct reasoning, wrong final value |
+**Step 1 - wrong_setup**: Incorrectly identifies approach or sets up wrong equation
+- Example: "Misapply the quadratic formula" instead of "Apply..."
+
+**Step 2 - wrong_formula**: Applies incorrect formula or theorem
+- Example: Uses area formula for wrong shape
+
+**Step 3 - calculation_error**: Makes arithmetic error in calculation
+- Example: "15 × 12 = 190" (should be 180)
+
+**Step 4 - logic_error**: Draws wrong conclusion from previous steps
+- Example: Invalid deduction from correct premises
+
+**Step 5 - wrong_answer**: States incorrect final answer
+- Example: Correct reasoning, wrong final value
 
 ### Why This Is Hard
 
@@ -37,60 +44,46 @@ You are given **242 math problems** from AIMO, AMC, AIME, PUMaC, and HMMT compet
 ## Data Fields
 
 ### Identifiers
-| Field | Type | Description |
-|-------|------|-------------|
-| `statement_id` | int | Unique row identifier (0 to N-1) |
-| `source_id` | string | Problem ID (e.g., "AMC001", "AIME003") |
-| `source` | string | Competition and year (e.g., "AMC 12A 2020") |
+- `statement_id` (int) - Unique row identifier (0 to N-1)
+- `source_id` (string) - Problem ID (e.g., "AMC001", "AIME003")
+- `source` (string) - Competition and year (e.g., "AMC 12A 2020")
 
 ### Problem Content
-| Field | Type | Description |
-|-------|------|-------------|
-| `statement` | string | The math problem statement |
-| `domain` | string | Subject area (Algebra, Geometry, Number Theory, Combinatorics, Probability) |
-| `correct_answer` | string | The verified correct answer |
-| `tier` | int | Difficulty level (1 = easiest, 4 = hardest) |
-| `cot` | string | 5-step Chain-of-Thought reasoning |
+- `statement` (string) - The math problem statement
+- `domain` (string) - Subject area (Algebra, Geometry, Number Theory, Combinatorics, Probability)
+- `correct_answer` (string) - The verified correct answer
+- `tier` (int) - Difficulty level (1 = easiest, 4 = hardest)
+- `cot` (string) - 5-step Chain-of-Thought reasoning
 
 ### Targets (What You Predict)
-| Field | Type | Description | Values |
-|-------|------|-------------|--------|
-| `has_error` | int | **Target 1**: Whether CoT contains an error | 0 = correct, 1 = error |
-| `error_step` | int | **Target 2**: Which step has the error | -1 = none, 1-5 = step number |
-| `error_type` | string | Type of error | wrong_setup, wrong_formula, calculation_error, logic_error, wrong_answer, none |
+- `has_error` (int) - **Target 1**: Whether CoT contains an error (0 = correct, 1 = error)
+- `error_step` (int) - **Target 2**: Which step has the error (-1 = none, 1-5 = step number)
+- `error_type` (string) - Type of error (wrong_setup, wrong_formula, calculation_error, logic_error, wrong_answer, none)
 
 ---
 
 ## Dataset Statistics
 
-| Metric | Value |
-|--------|-------|
-| **Total Samples** | 242 |
-| **Correct CoT** | 200 (82.6%) |
-| **Error CoT** | 42 (17.4%) |
-| **Base Problems** | 200 unique |
-| **Domains** | 5 (Algebra, Geometry, Number Theory, Combinatorics, Probability) |
-| **Difficulty Tiers** | 4 (Tier 1 = AMC basic, Tier 4 = Olympiad) |
+**Total Samples**: 242
+**Correct CoT**: 200 (82.6%)
+**Error CoT**: 42 (17.4%)
+**Base Problems**: 200 unique
+**Domains**: 5 (Algebra, Geometry, Number Theory, Combinatorics, Probability)
+**Difficulty Tiers**: 4 (Tier 1 = AMC basic, Tier 4 = Olympiad)
 
 ### Error Step Distribution
-
-| Step | Count | Percentage |
-|------|-------|------------|
-| Step 1 | 11 | 26.2% |
-| Step 2 | 10 | 23.8% |
-| Step 3 | 5 | 11.9% |
-| Step 4 | 8 | 19.0% |
-| Step 5 | 8 | 19.0% |
+- Step 1: 11 (26.2%)
+- Step 2: 10 (23.8%)
+- Step 3: 5 (11.9%)
+- Step 4: 8 (19.0%)
+- Step 5: 8 (19.0%)
 
 ### Domain Distribution
-
-| Domain | Samples |
-|--------|---------|
-| Algebra | ~60 |
-| Geometry | ~50 |
-| Number Theory | ~45 |
-| Combinatorics | ~45 |
-| Probability | ~42 |
+- Algebra: ~60 samples
+- Geometry: ~50 samples
+- Number Theory: ~45 samples
+- Combinatorics: ~45 samples
+- Probability: ~42 samples
 
 ---
 
@@ -256,10 +249,10 @@ print(f"Baseline F1 (all correct): {f1:.4f}")
 
 # Baseline 2: Random step prediction for errors
 import random
-y_pred_step = [random.randint(1, 5) if y == 1 else -1 
+y_pred_step = [random.randint(1, 5) if y == 1 else -1
                for y in test['has_error']]
 error_mask = test['has_error'] == 1
-acc = accuracy_score(test.loc[error_mask, 'error_step'], 
+acc = accuracy_score(test.loc[error_mask, 'error_step'],
                      [y_pred_step[i] for i in range(len(test)) if error_mask.iloc[i]])
 print(f"Random localization accuracy: {acc:.4f}")
 
