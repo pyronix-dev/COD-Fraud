@@ -78,6 +78,54 @@ You are given **242 math problems** from AIMO, AMC, AIME, PUMaC, and HMMT compet
 
 ---
 
+## File Structure
+
+The dataset is organized into three primary CSV files. All files are UTF-8 encoded.
+
+### train.csv (145 rows, 60%)
+Contains the training dataset with all labels for model training and validation.
+
+**Columns:**
+- `statement_id` - Unique row identifier
+- `statement` - The math problem statement
+- `domain` - Subject area (Algebra, Geometry, Number Theory, Combinatorics, Probability)
+- `correct_answer` - The verified correct answer
+- `has_error` - **Label**: Whether CoT contains an error (0 = correct, 1 = error)
+- `error_step` - **Label**: Which step has the error (-1 = none, 1-5 = step number)
+- `error_type` - **Label**: Type of error (wrong_setup, wrong_formula, calculation_error, logic_error, wrong_answer, none)
+- `cot` - 5-step Chain-of-Thought reasoning
+
+### test.csv (97 rows, 40%)
+Contains the problem statements and CoT steps **without** the error labels. Use this to generate your predictions.
+
+**Columns:**
+- `statement_id` - Unique row identifier
+- `statement` - The math problem statement
+- `domain` - Subject area
+- `correct_answer` - The verified correct answer
+- `cot` - 5-step Chain-of-Thought reasoning
+
+**Note:** The labels (`has_error`, `error_step`, `error_type`) are hidden for the test set.
+
+### sample_submission.csv (97 rows)
+A template showing the required format for your final submission.
+
+**Columns:**
+- `statement_id` - Unique row identifier (must match test.csv)
+- `has_error` - Your prediction: 0 (correct) or 1 (error)
+- `error_step` - Your prediction: -1 (no error) or 1-5 (step with error)
+
+**Example:**
+```csv
+statement_id,has_error,error_step
+42,0,-1
+15,1,3
+89,1,2
+...
+```
+
+---
+
 ## Evaluation
 
 ### Primary Metric: Error Detection F1
