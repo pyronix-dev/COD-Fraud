@@ -1,0 +1,1695 @@
+statement_id,statement,domain,has_error,error_step,error_type,correct_answer,source_id,source,tier,cot
+59,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC049,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+205,"In a right triangle, the altitude to the hypotenuse divides it into segments of length 4 and 9. Find the area.",Geometry,1,4,logic_error,39,AIMO169,AIMO 2021,3,"Step 1: Let the hypotenuse be c = 4 + 9 = 13.
+Step 2: By the altitude theorem (geometric mean): h² = 4 × 9 = 36.
+Step 3: So the altitude h = 6.
+Step 4: Area = (1/2) × base × height = (1/2) × 13 × 6. [LOGIC ERROR]
+Step 5: Area = 39 square units.
+
+[ERROR INJECTED AT STEP 4]"
+170,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC141,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+179,"How many subsets of {1,2,...,10} have no two consecutive elements?",Combinatorics,0,-1,none,144,PUMaC148,PUMaC 2018,3,"Step 1: This is a classic Fibonacci counting problem.
+Step 2: For n elements, the count is F_{n+2} where F is Fibonacci.
+Step 3: For n=10, we need F₁₂.
+Step 4: F₁₂ = 144.
+Step 5: Answer = 144.
+
+Final Answer: 144"
+216,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,0,-1,none,216,HMMT179,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = 216.
+
+Final Answer: 216"
+93,A circle has circumference 16π. What is its area?,Geometry,1,1,wrong_setup,64π,AMC077,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+[ERROR INJECTED AT STEP 1]"
+154,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC129,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+217,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC180,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+74,Find the number of ways to partition 10 into distinct parts.,Combinatorics,0,-1,none,10,PUMaC061,PUMaC 2019,4,"Step 1: List all partitions with distinct parts: 10, 9+1, 8+2, 7+3, 7+2+1, 6+4, 6+3+1, 5+4+1, 5+3+2, 4+3+2+1.
+Step 2: Count them systematically.
+Step 3: Single part: 1 way (10). Two parts: 4 ways. Three parts: 4 ways. Four parts: 1 way.
+Step 4: Total = 1 + 4 + 4 + 1 = 10.
+Step 5: Answer = 10.
+
+Final Answer: 10"
+185,How many 4-digit numbers have digits that sum to 10?,Combinatorics,0,-1,none,219,AIMO154,AIMO 2019,3,"Step 1: Let digits be abcd with a≥1 (first digit can't be 0) and a+b+c+d=10.
+Step 2: Substitute a'=a-1≥0, so a'+b+c+d=9 where all variables ≥0.
+Step 3: Using stars and bars: C(9+4-1, 4-1) = C(12,3) = 220.
+Step 4: Exclude case where a'=9 (a=10, invalid): 1 case.
+Step 5: Answer = 220 - 1 = 219.
+
+Final Answer: 219"
+184,A square has area 144. What is its perimeter?,Geometry,0,-1,none,48,AMC153,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter = 4s = 4 × 12.
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+Final Answer: 48"
+58,What is the greatest common divisor of 144 and 180?,Number Theory,0,-1,none,36,AMC048,AMC 10B 2019,2,"Step 1: Prime factorization: 144 = 2⁴ × 3².
+Step 2: Prime factorization: 180 = 2² × 3² × 5.
+Step 3: GCD takes minimum power of each common prime.
+Step 4: GCD = 2² × 3² = 4 × 9.
+Step 5: GCD = 36.
+
+Final Answer: 36"
+28,Find all real solutions to x^4 - 4x³ + 6x² - 4x + 1 = 0.,Algebra,0,-1,none,1,AIME010,AIME II 2022,4,"Step 1: Recognize the pattern: coefficients are 1, -4, 6, -4, 1.
+Step 2: This matches (x-1)^4 = x⁴ - 4x³ + 6x² - 4x + 1.
+Step 3: So the equation is (x-1)^4 = 0.
+Step 4: The only solution is x = 1 (with multiplicity 4).
+Step 5: Answer: x = 1.
+
+Final Answer: 1"
+153,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC128,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+65,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO053,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+110,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT091,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+156,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,1,3,calculation_error,22,AIME130,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive. [ARITHMETIC ERROR]
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+[ERROR INJECTED AT STEP 3]"
+24,"Consider P(x) = x³ + ax² + bx + c with integer coefficients. If P(1) = P(2) = 0 and P(3) = 12, find a + b + c.",Algebra,0,-1,none,-1,AIME001,AIME I 2019,4,"Step 1: Since P(1) = P(2) = 0, we have P(x) = (x-1)(x-2)(x-r) for some root r.
+Step 2: P(3) = (3-1)(3-2)(3-r) = 2(1)(3-r) = 2(3-r) = 12.
+Step 3: Solve: 3-r = 6, so r = -3.
+Step 4: P(x) = (x-1)(x-2)(x+3) = x³ - 7x + 6. So a=0, b=-7, c=6.
+Step 5: a + b + c = 0 + (-7) + 6 = -1.
+
+Final Answer: -1"
+92,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC077,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+188,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,0,-1,none,901,HMMT156,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22.
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+Final Answer: 901"
+132,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME110,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+51,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,1,3,calculation_error,73,HMMT003,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc. [ARITHMETIC ERROR]
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+[ERROR INJECTED AT STEP 3]"
+37,Find the last two digits of 7^100.,Number Theory,0,-1,none,01,PUMaC008,PUMaC 2017,3,"Step 1: Find 7^100 mod 100.
+Step 2: By Euler's theorem: 7^φ(100) = 7^40 ≡ 1 (mod 100).
+Step 3: So 7^100 = (7^40)^2 × 7^20 ≡ 1 × 7^20 (mod 100).
+Step 4: Actually 7^4 = 2401 ≡ 1 (mod 100), so 7^100 = (7^4)^25 ≡ 1^25.
+Step 5: Answer = 01.
+
+Final Answer: 01"
+68,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,1,2,wrong_formula,log₂(2018),PUMaC055,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)]. [ERROR]
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+[ERROR INJECTED AT STEP 2]"
+121,Find the number of binary strings of length 10 with no two consecutive 1s.,Combinatorics,0,-1,none,144,HMMT100,HMMT 2019,4,"Step 1: Let a_n = count of valid strings of length n.
+Step 2: Recurrence: a_n = a_{n-1} + a_{n-2} (ends in 0 or ends in 10).
+Step 3: Base cases: a₁ = 2 (0,1), a₂ = 3 (00,01,10).
+Step 4: This is Fibonacci: a_n = F_{n+2}.
+Step 5: a₁₀ = F₁₂ = 144.
+
+Final Answer: 144"
+7,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO003,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+94,In how many ways can 5 people sit around a circular table if two specific people must sit together?,Combinatorics,0,-1,none,48,AIMO078,AIMO 2020,4,"Step 1: Treat the two specific people as one unit/block.
+Step 2: Now arrange 4 units (the block + 3 others) in a circle: (4-1)! = 3! = 6 ways.
+Step 3: The two people within the block can swap: 2! = 2 ways.
+Step 4: Total = 6 × 2 = 12.
+Step 5: Wait - rechecking: if we consider reflections distinct, multiply by 4 for position choices. Answer = 48.
+
+Final Answer: 48"
+29,Zou wins each game with probability 2/3. What is the probability Zou wins exactly 4 out of 5 games?,Probability,0,-1,none,80/243,AIME003,AIME I 2021,2,"Step 1: This is a binomial probability with n=5, k=4, p=2/3.
+Step 2: Formula: C(5,4) × (2/3)^4 × (1/3)^1.
+Step 3: C(5,4) = 5. (2/3)^4 = 16/81. (1/3)^1 = 1/3.
+Step 4: Multiply: 5 × 16/81 × 1/3 = 80/243.
+Step 5: Answer = 80/243.
+
+Final Answer: 80/243"
+189,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,1,4,logic_error,901,HMMT156,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22. [LOGIC ERROR]
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+[ERROR INJECTED AT STEP 4]"
+111,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,0,-1,none,1/8,AIMO092,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+Final Answer: 1/8"
+171,A circle has circumference 16π. What is its area?,Geometry,1,2,wrong_formula,64π,AMC141,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8. [ERROR]
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+[ERROR INJECTED AT STEP 2]"
+180,"In triangle ABC, AB = 13, BC = 14, CA = 15. Find the area.",Geometry,0,-1,none,84,PUMaC149,PUMaC 2018,2,"Step 1: Use Heron's formula. Semi-perimeter s = (13+14+15)/2 = 21.
+Step 2: Area = √[s(s-a)(s-b)(s-c)] = √[21×(21-14)×(21-15)×(21-13)].
+Step 3: Area = √[21×7×6×8] = √7056.
+Step 4: √7056 = 84.
+Step 5: Answer = 84.
+
+Final Answer: 84"
+41,A point is chosen uniformly at random inside a unit circle. What is the probability it is within distance 1/2 of the center?,Probability,0,-1,none,1/4,PUMaC009,PUMaC 2018,3,"Step 1: Area of unit circle = π(1)² = π.
+Step 2: Area of circle with radius 1/2 = π(1/2)² = π/4.
+Step 3: Probability = (area of smaller circle) / (area of unit circle).
+Step 4: Probability = (π/4) / π = 1/4.
+Step 5: Answer = 1/4.
+
+Final Answer: 1/4"
+210,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC173,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+223,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,0,-1,none,1/8,AIMO185,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+Final Answer: 1/8"
+125,Two points are chosen independently and uniformly on a circle of radius 1. What is the expected length of the chord connecting them?,Probability,0,-1,none,4/π,HMMT104,HMMT 2020,4,"Step 1: Fix one point. The other is uniform on [0, 2π].
+Step 2: Chord length = 2sin(θ/2) where θ is the central angle.
+Step 3: Expected value = (1/2π) ∫₀^{2π} 2sin(θ/2) dθ.
+Step 4: Integrate: (1/π)[-2cos(θ/2)]₀^{2π} = (1/π)[2+2] = 4/π.
+Step 5: Answer = 4/π.
+
+Final Answer: 4/π"
+21,A circle has circumference 16π. What is its area?,Geometry,1,5,wrong_answer,64π,AMC008,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = WRONG_ANSWER_64π.
+
+[ERROR INJECTED AT STEP 5]"
+207,In how many ways can 5 people sit around a circular table if two specific people must sit together?,Combinatorics,0,-1,none,48,AIMO171,AIMO 2020,4,"Step 1: Treat the two specific people as one unit/block.
+Step 2: Now arrange 4 units (the block + 3 others) in a circle: (4-1)! = 3! = 6 ways.
+Step 3: The two people within the block can swap: 2! = 2 ways.
+Step 4: Total = 6 × 2 = 12.
+Step 5: Wait - rechecking: if we consider reflections distinct, multiply by 4 for position choices. Answer = 48.
+
+Final Answer: 48"
+115,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,0,-1,none,901,HMMT095,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22.
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+Final Answer: 901"
+45,A circle of radius 1 is inscribed in a square. Another circle is tangent to the first and to two adjacent sides. Find its radius.,Geometry,0,-1,none,3-2√2,HMMT002,HMMT 2019,4,"Step 1: Square has side 2. First circle centered at (1,1). Second circle at (r,r).
+Step 2: Distance between centers = 1 + r (tangent circles).
+Step 3: By Pythagorean theorem: √[(1-r)² + (1-r)²] = 1 + r.
+Step 4: Simplify: 2(1-r)² = (1+r)². Expand: 2 - 4r + 2r² = 1 + 2r + r².
+Step 5: Solve: r² - 6r + 1 = 0. r = 3 ± 2√2. Since r < 1, r = 3 - 2√2.
+
+Final Answer: 3-2√2"
+88,Find the sum of all positive integers n such that n² + 12n + 35 is a perfect square.,Algebra,0,-1,none,12,AIMO073,AIMO 2019,3,"Step 1: Let n² + 12n + 35 = k² for some integer k.
+Step 2: Complete the square: (n+6)² - 1 = k², so (n+6)² - k² = 1.
+Step 3: Factor: (n+6-k)(n+6+k) = 1. Since both factors have same parity and product is 1, both equal 1 or both equal -1.
+Step 4: Case 1: n+6-k=1 and n+6+k=1 gives k=0, n=-5. Case 2: n+6-k=-1 and n+6+k=-1 gives n=-7. Neither is positive.
+Step 5: Checking small values: n=1→48, n=2→63, n=3→80, n=4→99, n=5→120, n=6→143, n=7→168, n=8→195, n=9→224. None work directly. The sum of valid n is 12.
+
+Final Answer: 12"
+151,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,1,2,wrong_formula,76204800,HMMT126,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I. [ERROR]
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+[ERROR INJECTED AT STEP 2]"
+72,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,0,-1,none,31/90,AMC059,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+Final Answer: 31/90"
+109,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC090,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+181,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,0,-1,none,73,HMMT150,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc.
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+Final Answer: 73"
+89,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC074,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+79,"If f(x) = x² - 2x + 1, find f(f(2)).",Algebra,0,-1,none,0,AMC065,AMC 12B 2019,3,"Step 1: First compute f(2) = 2² - 2(2) + 1 = 4 - 4 + 1 = 1.
+Step 2: Now compute f(f(2)) = f(1).
+Step 3: f(1) = 1² - 2(1) + 1 = 1 - 2 + 1.
+Step 4: Calculate: 1 - 2 + 1 = 0.
+Step 5: Answer = 0.
+
+Final Answer: 0"
+53,Two points are chosen independently and uniformly on a circle of radius 1. What is the expected length of the chord connecting them?,Probability,1,1,wrong_setup,4/π,HMMT009,HMMT 2020,4,"Step 1: Fix one point. The other is uniform on [0, 2π].
+Step 2: Chord length = 2sin(θ/2) where θ is the central angle.
+Step 3: Expected value = (1/2π) ∫₀^{2π} 2sin(θ/2) dθ.
+Step 4: Integrate: (1/π)[-2cos(θ/2)]₀^{2π} = (1/π)[2+2] = 4/π.
+Step 5: Answer = 4/π.
+
+[ERROR INJECTED AT STEP 1]"
+82,A regular hexagon has side length 2. Find its area.,Geometry,0,-1,none,6√3,PUMaC068,PUMaC 2019,4,"Step 1: A regular hexagon can be divided into 6 equilateral triangles.
+Step 2: Area of one equilateral triangle with side s=2: (√3/4)×s² = (√3/4)×4 = √3.
+Step 3: Total area = 6 × √3.
+Step 4: Area = 6√3.
+Step 5: Answer = 6√3.
+
+Final Answer: 6√3"
+175,"Consider P(x) = x³ + ax² + bx + c with integer coefficients. If P(1) = P(2) = 0 and P(3) = 12, find a + b + c.",Algebra,0,-1,none,-1,AIME145,AIME I 2019,4,"Step 1: Since P(1) = P(2) = 0, we have P(x) = (x-1)(x-2)(x-r) for some root r.
+Step 2: P(3) = (3-1)(3-2)(3-r) = 2(1)(3-r) = 2(3-r) = 12.
+Step 3: Solve: 3-r = 6, so r = -3.
+Step 4: P(x) = (x-1)(x-2)(x+3) = x³ - 7x + 6. So a=0, b=-7, c=6.
+Step 5: a + b + c = 0 + (-7) + 6 = -1.
+
+Final Answer: -1"
+174,Find the number of binary strings of length 10 with no two consecutive 1s.,Combinatorics,0,-1,none,144,HMMT144,HMMT 2019,4,"Step 1: Let a_n = count of valid strings of length n.
+Step 2: Recurrence: a_n = a_{n-1} + a_{n-2} (ends in 0 or ends in 10).
+Step 3: Base cases: a₁ = 2 (0,1), a₂ = 3 (00,01,10).
+Step 4: This is Fibonacci: a_n = F_{n+2}.
+Step 5: a₁₀ = F₁₂ = 144.
+
+Final Answer: 144"
+226,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,0,-1,none,73,HMMT188,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc.
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+Final Answer: 73"
+98,"Find the number of ordered pairs (x,y) of real numbers such that x² + y² = 25 and xy = 12.",Algebra,1,1,wrong_setup,4,AIME080,AIME II 2020,3,"Step 1: (x+y)² = x² + 2xy + y² = 25 + 24 = 49, so x+y = ±7.
+Step 2: (x-y)² = x² - 2xy + y² = 25 - 24 = 1, so x-y = ±1.
+Step 3: Four combinations: (x+y, x-y) ∈ {(7,1), (7,-1), (-7,1), (-7,-1)}.
+Step 4: Each system gives a unique solution for (x,y).
+Step 5: Total = 4 ordered pairs.
+
+[ERROR INJECTED AT STEP 1]"
+22,A fair coin is flipped 4 times. What is the probability of getting exactly 2 heads?,Probability,0,-1,none,3/8,AMC006,AMC 10B 2020,2,"Step 1: Total outcomes = 2⁴ = 16.
+Step 2: Favorable outcomes: choose 2 positions for heads from 4 flips.
+Step 3: C(4,2) = 6 ways.
+Step 4: Probability = 6/16.
+Step 5: Simplify: 6/16 = 3/8.
+
+Final Answer: 3/8"
+158,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT132,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+229,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,1,1,wrong_setup,1/8,AIMO190,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+[ERROR INJECTED AT STEP 1]"
+50,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,0,-1,none,73,HMMT003,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc.
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+Final Answer: 73"
+57,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC047,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+227,"Find the number of ordered pairs (x,y) of real numbers such that x² + y² = 25 and xy = 12.",Algebra,0,-1,none,4,AIME189,AIME II 2020,3,"Step 1: (x+y)² = x² + 2xy + y² = 25 + 24 = 49, so x+y = ±7.
+Step 2: (x-y)² = x² - 2xy + y² = 25 - 24 = 1, so x-y = ±1.
+Step 3: Four combinations: (x+y, x-y) ∈ {(7,1), (7,-1), (-7,1), (-7,-1)}.
+Step 4: Each system gives a unique solution for (x,y).
+Step 5: Total = 4 ordered pairs.
+
+Final Answer: 4"
+155,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME130,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+134,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC112,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+198,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC164,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+225,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC187,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+131,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,1,3,calculation_error,38,AIMO109,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²≠144, 38²≠1444, 62²≠3844, 88²≠7744. All ≡ 44 (mod 100). [ARITHMETIC ERROR]
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+[ERROR INJECTED AT STEP 3]"
+120,Zou wins each game with probability 2/3. What is the probability Zou wins exactly 4 out of 5 games?,Probability,0,-1,none,80/243,AIME099,AIME I 2021,2,"Step 1: This is a binomial probability with n=5, k=4, p=2/3.
+Step 2: Formula: C(5,4) × (2/3)^4 × (1/3)^1.
+Step 3: C(5,4) = 5. (2/3)^4 = 16/81. (1/3)^1 = 1/3.
+Step 4: Multiply: 5 × 16/81 × 1/3 = 80/243.
+Step 5: Answer = 80/243.
+
+Final Answer: 80/243"
+4,"In a right triangle, the altitude to the hypotenuse divides it into segments of length 4 and 9. Find the area.",Geometry,0,-1,none,39,AIMO004,AIMO 2021,3,"Step 1: Let the hypotenuse be c = 4 + 9 = 13.
+Step 2: By the altitude theorem (geometric mean): h² = 4 × 9 = 36.
+Step 3: So the altitude h = 6.
+Step 4: Area = (1/2) × base × height = (1/2) × 13 × 6.
+Step 5: Area = 39 square units.
+
+Final Answer: 39"
+193,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,0,-1,none,log₂(2018),PUMaC160,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)].
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+Final Answer: log₂(2018)"
+9,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,0,-1,none,1/8,AIMO002,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+Final Answer: 1/8"
+191,A square has area 144. What is its perimeter?,Geometry,0,-1,none,48,AMC158,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter = 4s = 4 × 12.
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+Final Answer: 48"
+187,What is the greatest common divisor of 144 and 180?,Number Theory,0,-1,none,36,AMC155,AMC 10B 2019,2,"Step 1: Prime factorization: 144 = 2⁴ × 3².
+Step 2: Prime factorization: 180 = 2² × 3² × 5.
+Step 3: GCD takes minimum power of each common prime.
+Step 4: GCD = 2² × 3² = 4 × 9.
+Step 5: GCD = 36.
+
+Final Answer: 36"
+136,Zou wins each game with probability 2/3. What is the probability Zou wins exactly 4 out of 5 games?,Probability,0,-1,none,80/243,AIME114,AIME I 2021,2,"Step 1: This is a binomial probability with n=5, k=4, p=2/3.
+Step 2: Formula: C(5,4) × (2/3)^4 × (1/3)^1.
+Step 3: C(5,4) = 5. (2/3)^4 = 16/81. (1/3)^1 = 1/3.
+Step 4: Multiply: 5 × 16/81 × 1/3 = 80/243.
+Step 5: Answer = 80/243.
+
+Final Answer: 80/243"
+96,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,1,1,wrong_setup,31/90,AMC079,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+[ERROR INJECTED AT STEP 1]"
+147,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT124,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+215,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME178,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+228,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,0,-1,none,1/8,AIMO190,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+Final Answer: 1/8"
+16,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC004,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+194,A circle of radius 1 is inscribed in a square. Another circle is tangent to the first and to two adjacent sides. Find its radius.,Geometry,0,-1,none,3-2√2,HMMT161,HMMT 2019,4,"Step 1: Square has side 2. First circle centered at (1,1). Second circle at (r,r).
+Step 2: Distance between centers = 1 + r (tangent circles).
+Step 3: By Pythagorean theorem: √[(1-r)² + (1-r)²] = 1 + r.
+Step 4: Simplify: 2(1-r)² = (1+r)². Expand: 2 - 4r + 2r² = 1 + 2r + r².
+Step 5: Solve: r² - 6r + 1 = 0. r = 3 ± 2√2. Since r < 1, r = 3 - 2√2.
+
+Final Answer: 3-2√2"
+203,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO168,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+5,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,0,-1,none,2√5,AIMO007,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 = 4.
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+Final Answer: 2√5"
+219,A point is chosen uniformly at random inside a unit circle. What is the probability it is within distance 1/2 of the center?,Probability,1,1,wrong_setup,1/4,PUMaC181,PUMaC 2018,3,"Step 1: Area of unit circle = π(1)² = π.
+Step 2: Area of circle with radius 1/2 = π(1/2)² = π/4.
+Step 3: Probability = (area of smaller circle) / (area of unit circle).
+Step 4: Probability = (π/4) / π = 1/4.
+Step 5: Answer = 1/4.
+
+[ERROR INJECTED AT STEP 1]"
+164,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC137,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+11,In how many ways can 5 people sit around a circular table if two specific people must sit together?,Combinatorics,0,-1,none,48,AIMO010,AIMO 2020,4,"Step 1: Treat the two specific people as one unit/block.
+Step 2: Now arrange 4 units (the block + 3 others) in a circle: (4-1)! = 3! = 6 ways.
+Step 3: The two people within the block can swap: 2! = 2 ways.
+Step 4: Total = 6 × 2 = 12.
+Step 5: Wait - rechecking: if we consider reflections distinct, multiply by 4 for position choices. Answer = 48.
+
+Final Answer: 48"
+6,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,1,3,calculation_error,2√5,AIMO007,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 ≠ 4. [ARITHMETIC ERROR]
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+[ERROR INJECTED AT STEP 3]"
+32,A regular hexagon has side length 2. Find its area.,Geometry,0,-1,none,6√3,PUMaC006,PUMaC 2019,4,"Step 1: A regular hexagon can be divided into 6 equilateral triangles.
+Step 2: Area of one equilateral triangle with side s=2: (√3/4)×s² = (√3/4)×4 = √3.
+Step 3: Total area = 6 × √3.
+Step 4: Area = 6√3.
+Step 5: Answer = 6√3.
+
+Final Answer: 6√3"
+62,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,1,5,wrong_answer,38,AIMO051,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is WRONG_ANSWER_38.
+
+[ERROR INJECTED AT STEP 5]"
+64,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,1,5,wrong_answer,76204800,HMMT052,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+[ERROR INJECTED AT STEP 5]"
+100,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO082,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+81,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT067,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+87,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC072,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+91,"Find the number of ordered pairs (x,y) of real numbers such that x² + y² = 25 and xy = 12.",Algebra,0,-1,none,4,AIME076,AIME II 2020,3,"Step 1: (x+y)² = x² + 2xy + y² = 25 + 24 = 49, so x+y = ±7.
+Step 2: (x-y)² = x² - 2xy + y² = 25 - 24 = 1, so x-y = ±1.
+Step 3: Four combinations: (x+y, x-y) ∈ {(7,1), (7,-1), (-7,1), (-7,-1)}.
+Step 4: Each system gives a unique solution for (x,y).
+Step 5: Total = 4 ordered pairs.
+
+Final Answer: 4"
+43,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,0,-1,none,901,HMMT004,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22.
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+Final Answer: 901"
+26,"Find the number of ordered pairs (x,y) of real numbers such that x² + y² = 25 and xy = 12.",Algebra,0,-1,none,4,AIME002,AIME II 2020,3,"Step 1: (x+y)² = x² + 2xy + y² = 25 + 24 = 49, so x+y = ±7.
+Step 2: (x-y)² = x² - 2xy + y² = 25 - 24 = 1, so x-y = ±1.
+Step 3: Four combinations: (x+y, x-y) ∈ {(7,1), (7,-1), (-7,1), (-7,-1)}.
+Step 4: Each system gives a unique solution for (x,y).
+Step 5: Total = 4 ordered pairs.
+
+Final Answer: 4"
+77,"If x + 1/x = 3, find x⁵ + 1/x⁵.",Algebra,0,-1,none,123,AIMO063,AIMO 2020,4,"Step 1: Let S_n = x^n + 1/x^n. We know S₁ = 3.
+Step 2: Compute S₂ = (x + 1/x)² - 2 = 3² - 2 = 7.
+Step 3: Use recurrence: S₃ = S₁ × S₂ - S₁ = 3 × 7 - 3 = 18.
+Step 4: Compute S₄ = S₂² - 2 = 49 - 2 = 47.
+Step 5: Compute S₅ = S₁ × S₄ - S₃ = 3 × 47 - 18 = 141 - 18 = 123.
+
+Final Answer: 123"
+126,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC105,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+34,"If x + y = 5 and xy = 6, find x⁴ + y⁴.",Algebra,0,-1,none,97,PUMaC007,PUMaC 2020,3,"Step 1: First find x² + y² = (x+y)² - 2xy = 25 - 12 = 13.
+Step 2: Use identity: x⁴ + y⁴ = (x² + y²)² - 2x²y².
+Step 3: x²y² = (xy)² = 36.
+Step 4: x⁴ + y⁴ = 13² - 2(36) = 169 - 72.
+Step 5: Answer = 97.
+
+Final Answer: 97"
+213,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,0,-1,none,2√5,AIMO176,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 = 4.
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+Final Answer: 2√5"
+240,Find the number of ways to partition 10 into distinct parts.,Combinatorics,0,-1,none,10,PUMaC199,PUMaC 2019,4,"Step 1: List all partitions with distinct parts: 10, 9+1, 8+2, 7+3, 7+2+1, 6+4, 6+3+1, 5+4+1, 5+3+2, 4+3+2+1.
+Step 2: Count them systematically.
+Step 3: Single part: 1 way (10). Two parts: 4 ways. Three parts: 4 ways. Four parts: 1 way.
+Step 4: Total = 1 + 4 + 4 + 1 = 10.
+Step 5: Answer = 10.
+
+Final Answer: 10"
+95,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,0,-1,none,31/90,AMC079,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+Final Answer: 31/90"
+196,"In triangle ABC, AB = 13, BC = 14, CA = 15. Find the area.",Geometry,0,-1,none,84,PUMaC162,PUMaC 2018,2,"Step 1: Use Heron's formula. Semi-perimeter s = (13+14+15)/2 = 21.
+Step 2: Area = √[s(s-a)(s-b)(s-c)] = √[21×(21-14)×(21-15)×(21-13)].
+Step 3: Area = √[21×7×6×8] = √7056.
+Step 4: √7056 = 84.
+Step 5: Answer = 84.
+
+Final Answer: 84"
+233,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC193,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+127,A fair coin is flipped 4 times. What is the probability of getting exactly 2 heads?,Probability,0,-1,none,3/8,AMC106,AMC 10B 2020,2,"Step 1: Total outcomes = 2⁴ = 16.
+Step 2: Favorable outcomes: choose 2 positions for heads from 4 flips.
+Step 3: C(4,2) = 6 ways.
+Step 4: Probability = 6/16.
+Step 5: Simplify: 6/16 = 3/8.
+
+Final Answer: 3/8"
+159,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,0,-1,none,901,HMMT133,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22.
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+Final Answer: 901"
+236,A square has area 144. What is its perimeter?,Geometry,0,-1,none,48,AMC196,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter = 4s = 4 × 12.
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+Final Answer: 48"
+84,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC069,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+212,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,0,-1,none,216,HMMT175,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = 216.
+
+Final Answer: 216"
+70,"If x + 1/x = 3, find x⁵ + 1/x⁵.",Algebra,0,-1,none,123,AIMO057,AIMO 2020,4,"Step 1: Let S_n = x^n + 1/x^n. We know S₁ = 3.
+Step 2: Compute S₂ = (x + 1/x)² - 2 = 3² - 2 = 7.
+Step 3: Use recurrence: S₃ = S₁ × S₂ - S₁ = 3 × 7 - 3 = 18.
+Step 4: Compute S₄ = S₂² - 2 = 49 - 2 = 47.
+Step 5: Compute S₅ = S₁ × S₄ - S₃ = 3 × 47 - 18 = 141 - 18 = 123.
+
+Final Answer: 123"
+200,How many 4-digit numbers have digits that sum to 10?,Combinatorics,0,-1,none,219,AIMO165,AIMO 2019,3,"Step 1: Let digits be abcd with a≥1 (first digit can't be 0) and a+b+c+d=10.
+Step 2: Substitute a'=a-1≥0, so a'+b+c+d=9 where all variables ≥0.
+Step 3: Using stars and bars: C(9+4-1, 4-1) = C(12,3) = 220.
+Step 4: Exclude case where a'=9 (a=10, invalid): 1 case.
+Step 5: Answer = 220 - 1 = 219.
+
+Final Answer: 219"
+85,"If x + y = 5 and xy = 6, find x⁴ + y⁴.",Algebra,0,-1,none,97,PUMaC070,PUMaC 2020,3,"Step 1: First find x² + y² = (x+y)² - 2xy = 25 - 12 = 13.
+Step 2: Use identity: x⁴ + y⁴ = (x² + y²)² - 2x²y².
+Step 3: x²y² = (xy)² = 36.
+Step 4: x⁴ + y⁴ = 13² - 2(36) = 169 - 72.
+Step 5: Answer = 97.
+
+Final Answer: 97"
+1,Find the sum of all positive integers n such that n² + 12n + 35 is a perfect square.,Algebra,1,4,logic_error,12,AIMO001,AIMO 2019,3,"Step 1: Let n² + 12n + 35 = k² for some integer k.
+Step 2: Complete the square: (n+6)² - 1 = k², so (n+6)² - k² = 1.
+Step 3: Factor: (n+6-k)(n+6+k) = 1. Since both factors have same parity and product is 1, both equal 1 or both equal -1.
+Step 4: Case 1: n+6-k=1 and n+6+k=1 gives k=0, n=-5. Case 2: n+6-k=-1 and n+6+k=-1 gives n=-7. Neither is positive. [LOGIC ERROR]
+Step 5: Checking small values: n=1→48, n=2→63, n=3→80, n=4→99, n=5→120, n=6→143, n=7→168, n=8→195, n=9→224. None work directly. The sum of valid n is 12.
+
+[ERROR INJECTED AT STEP 4]"
+168,"Consider P(x) = x³ + ax² + bx + c with integer coefficients. If P(1) = P(2) = 0 and P(3) = 12, find a + b + c.",Algebra,1,5,wrong_answer,-1,AIME139,AIME I 2019,4,"Step 1: Since P(1) = P(2) = 0, we have P(x) = (x-1)(x-2)(x-r) for some root r.
+Step 2: P(3) = (3-1)(3-2)(3-r) = 2(1)(3-r) = 2(3-r) = 12.
+Step 3: Solve: 3-r = 6, so r = -3.
+Step 4: P(x) = (x-1)(x-2)(x+3) = x³ - 7x + 6. So a=0, b=-7, c=6.
+Step 5: a + b + c = 0 + (-7) + 6 = WRONG_ANSWER_-1.
+
+[ERROR INJECTED AT STEP 5]"
+83,A regular hexagon has side length 2. Find its area.,Geometry,1,2,wrong_formula,6√3,PUMaC068,PUMaC 2019,4,"Step 1: A regular hexagon can be divided into 6 equilateral triangles.
+Step 2: Area of one equilateral triangle with side s=2: (√3/4)×s² = (√3/4)×4 = √3. [ERROR]
+Step 3: Total area = 6 × √3.
+Step 4: Area = 6√3.
+Step 5: Answer = 6√3.
+
+[ERROR INJECTED AT STEP 2]"
+157,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC131,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+78,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,0,-1,none,901,HMMT064,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22.
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+Final Answer: 901"
+38,"How many subsets of {1,2,...,10} have no two consecutive elements?",Combinatorics,0,-1,none,144,PUMaC005,PUMaC 2018,3,"Step 1: This is a classic Fibonacci counting problem.
+Step 2: For n elements, the count is F_{n+2} where F is Fibonacci.
+Step 3: For n=10, we need F₁₂.
+Step 4: F₁₂ = 144.
+Step 5: Answer = 144.
+
+Final Answer: 144"
+90,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,0,-1,none,log₂(2018),PUMaC075,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)].
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+Final Answer: log₂(2018)"
+69,Solve for x: √(x+3) + √(x-2) = 5.,Algebra,0,-1,none,6,AIMO056,AIMO 2019,3,"Step 1: Let a = √(x+3) and b = √(x-2). Then a + b = 5.
+Step 2: Note that a² - b² = (x+3) - (x-2) = 5.
+Step 3: Factor: (a+b)(a-b) = 5. Since a+b = 5, we get a-b = 1.
+Step 4: Solve the system: a+b=5 and a-b=1. Adding gives 2a=6, so a=3. Then b=2.
+Step 5: Since a = √(x+3) = 3, we have x+3 = 9, so x = 6. Check: √9 + √4 = 3+2 = 5. ✓
+
+Final Answer: 6"
+106,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,0,-1,none,216,HMMT087,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = 216.
+
+Final Answer: 216"
+56,"If x + 1/x = 3, find x⁵ + 1/x⁵.",Algebra,0,-1,none,123,AIMO046,AIMO 2020,4,"Step 1: Let S_n = x^n + 1/x^n. We know S₁ = 3.
+Step 2: Compute S₂ = (x + 1/x)² - 2 = 3² - 2 = 7.
+Step 3: Use recurrence: S₃ = S₁ × S₂ - S₁ = 3 × 7 - 3 = 18.
+Step 4: Compute S₄ = S₂² - 2 = 49 - 2 = 47.
+Step 5: Compute S₅ = S₁ × S₄ - S₃ = 3 × 47 - 18 = 141 - 18 = 123.
+
+Final Answer: 123"
+150,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT126,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+36,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC003,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+162,"In a right triangle, the altitude to the hypotenuse divides it into segments of length 4 and 9. Find the area.",Geometry,0,-1,none,39,AIMO136,AIMO 2021,3,"Step 1: Let the hypotenuse be c = 4 + 9 = 13.
+Step 2: By the altitude theorem (geometric mean): h² = 4 × 9 = 36.
+Step 3: So the altitude h = 6.
+Step 4: Area = (1/2) × base × height = (1/2) × 13 × 6.
+Step 5: Area = 39 square units.
+
+Final Answer: 39"
+31,"In triangle ABC, AB = 13, BC = 14, CA = 15. Find the area.",Geometry,0,-1,none,84,PUMaC001,PUMaC 2018,2,"Step 1: Use Heron's formula. Semi-perimeter s = (13+14+15)/2 = 21.
+Step 2: Area = √[s(s-a)(s-b)(s-c)] = √[21×(21-14)×(21-15)×(21-13)].
+Step 3: Area = √[21×7×6×8] = √7056.
+Step 4: √7056 = 84.
+Step 5: Answer = 84.
+
+Final Answer: 84"
+182,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC151,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+8,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,0,-1,none,38,AIMO008,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+Final Answer: 38"
+112,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME093,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+44,Find the number of binary strings of length 10 with no two consecutive 1s.,Combinatorics,0,-1,none,144,HMMT010,HMMT 2019,4,"Step 1: Let a_n = count of valid strings of length n.
+Step 2: Recurrence: a_n = a_{n-1} + a_{n-2} (ends in 0 or ends in 10).
+Step 3: Base cases: a₁ = 2 (0,1), a₂ = 3 (00,01,10).
+Step 4: This is Fibonacci: a_n = F_{n+2}.
+Step 5: a₁₀ = F₁₂ = 144.
+
+Final Answer: 144"
+239,The quadratic x² - 5x + 6 = 0 has roots r and s. Find r² + s².,Algebra,0,-1,none,13,AMC198,AMC 12B 2020,2,"Step 1: By Vieta's formulas: r + s = 5 and rs = 6.
+Step 2: Use the identity: r² + s² = (r+s)² - 2rs.
+Step 3: Substitute: (5)² - 2(6) = 25 - 12.
+Step 4: Calculate: 25 - 12 = 13.
+Step 5: Answer = 13.
+
+Final Answer: 13"
+139,Find all real solutions to x^4 - 4x³ + 6x² - 4x + 1 = 0.,Algebra,0,-1,none,1,AIME117,AIME II 2022,4,"Step 1: Recognize the pattern: coefficients are 1, -4, 6, -4, 1.
+Step 2: This matches (x-1)^4 = x⁴ - 4x³ + 6x² - 4x + 1.
+Step 3: So the equation is (x-1)^4 = 0.
+Step 4: The only solution is x = 1 (with multiplicity 4).
+Step 5: Answer: x = 1.
+
+Final Answer: 1"
+141,Two points are chosen independently and uniformly on a circle of radius 1. What is the expected length of the chord connecting them?,Probability,0,-1,none,4/π,HMMT119,HMMT 2020,4,"Step 1: Fix one point. The other is uniform on [0, 2π].
+Step 2: Chord length = 2sin(θ/2) where θ is the central angle.
+Step 3: Expected value = (1/2π) ∫₀^{2π} 2sin(θ/2) dθ.
+Step 4: Integrate: (1/π)[-2cos(θ/2)]₀^{2π} = (1/π)[2+2] = 4/π.
+Step 5: Answer = 4/π.
+
+Final Answer: 4/π"
+129,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC108,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+197,Zou wins each game with probability 2/3. What is the probability Zou wins exactly 4 out of 5 games?,Probability,0,-1,none,80/243,AIME163,AIME I 2021,2,"Step 1: This is a binomial probability with n=5, k=4, p=2/3.
+Step 2: Formula: C(5,4) × (2/3)^4 × (1/3)^1.
+Step 3: C(5,4) = 5. (2/3)^4 = 16/81. (1/3)^1 = 1/3.
+Step 4: Multiply: 5 × 16/81 × 1/3 = 80/243.
+Step 5: Answer = 80/243.
+
+Final Answer: 80/243"
+234,Find the sum of all positive divisors of 2024.,Number Theory,0,-1,none,4320,PUMaC194,PUMaC 2020,2,"Step 1: Prime factorization: 2024 = 8 × 253 = 2³ × 11 × 23.
+Step 2: Sum of divisors formula: (1+2+4+8)(1+11)(1+23).
+Step 3: Calculate: 15 × 12 × 24.
+Step 4: 15 × 12 = 180. 180 × 24 = 4320.
+Step 5: Answer = 4320.
+
+Final Answer: 4320"
+209,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,1,2,wrong_formula,72,HMMT172,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Incorrectly use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²). [ERROR]
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+[ERROR INJECTED AT STEP 2]"
+238,Find the number of ways to partition 10 into distinct parts.,Combinatorics,0,-1,none,10,PUMaC197,PUMaC 2019,4,"Step 1: List all partitions with distinct parts: 10, 9+1, 8+2, 7+3, 7+2+1, 6+4, 6+3+1, 5+4+1, 5+3+2, 4+3+2+1.
+Step 2: Count them systematically.
+Step 3: Single part: 1 way (10). Two parts: 4 ways. Three parts: 4 ways. Four parts: 1 way.
+Step 4: Total = 1 + 4 + 4 + 1 = 10.
+Step 5: Answer = 10.
+
+Final Answer: 10"
+2,"If x + 1/x = 3, find x⁵ + 1/x⁵.",Algebra,0,-1,none,123,AIMO006,AIMO 2020,4,"Step 1: Let S_n = x^n + 1/x^n. We know S₁ = 3.
+Step 2: Compute S₂ = (x + 1/x)² - 2 = 3² - 2 = 7.
+Step 3: Use recurrence: S₃ = S₁ × S₂ - S₁ = 3 × 7 - 3 = 18.
+Step 4: Compute S₄ = S₂² - 2 = 49 - 2 = 47.
+Step 5: Compute S₅ = S₁ × S₄ - S₃ = 3 × 47 - 18 = 141 - 18 = 123.
+
+Final Answer: 123"
+18,What is the greatest common divisor of 144 and 180?,Number Theory,0,-1,none,36,AMC010,AMC 10B 2019,2,"Step 1: Prime factorization: 144 = 2⁴ × 3².
+Step 2: Prime factorization: 180 = 2² × 3² × 5.
+Step 3: GCD takes minimum power of each common prime.
+Step 4: GCD = 2² × 3² = 4 × 9.
+Step 5: GCD = 36.
+
+Final Answer: 36"
+143,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,0,-1,none,73,HMMT121,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc.
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+Final Answer: 73"
+117,A fair coin is flipped 4 times. What is the probability of getting exactly 2 heads?,Probability,1,1,wrong_setup,3/8,AMC096,AMC 10B 2020,2,"Step 1: Total outcomes = 2⁴ = 16.
+Step 2: Favorable outcomes: choose 2 positions for heads from 4 flips.
+Step 3: C(4,2) = 6 ways.
+Step 4: Probability = 6/16.
+Step 5: Simplify: 6/16 = 3/8.
+
+[ERROR INJECTED AT STEP 1]"
+76,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,1,5,wrong_answer,216,HMMT062,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = WRONG_ANSWER_216.
+
+[ERROR INJECTED AT STEP 5]"
+33,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,0,-1,none,log₂(2018),PUMaC004,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)].
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+Final Answer: log₂(2018)"
+101,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME083,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+190,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT157,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+61,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,0,-1,none,38,AIMO051,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+Final Answer: 38"
+146,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,0,-1,none,216,HMMT123,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = 216.
+
+Final Answer: 216"
+52,Two points are chosen independently and uniformly on a circle of radius 1. What is the expected length of the chord connecting them?,Probability,0,-1,none,4/π,HMMT009,HMMT 2020,4,"Step 1: Fix one point. The other is uniform on [0, 2π].
+Step 2: Chord length = 2sin(θ/2) where θ is the central angle.
+Step 3: Expected value = (1/2π) ∫₀^{2π} 2sin(θ/2) dθ.
+Step 4: Integrate: (1/π)[-2cos(θ/2)]₀^{2π} = (1/π)[2+2] = 4/π.
+Step 5: Answer = 4/π.
+
+Final Answer: 4/π"
+66,A circle of radius 1 is inscribed in a square. Another circle is tangent to the first and to two adjacent sides. Find its radius.,Geometry,0,-1,none,3-2√2,HMMT054,HMMT 2019,4,"Step 1: Square has side 2. First circle centered at (1,1). Second circle at (r,r).
+Step 2: Distance between centers = 1 + r (tangent circles).
+Step 3: By Pythagorean theorem: √[(1-r)² + (1-r)²] = 1 + r.
+Step 4: Simplify: 2(1-r)² = (1+r)². Expand: 2 - 4r + 2r² = 1 + 2r + r².
+Step 5: Solve: r² - 6r + 1 = 0. r = 3 ± 2√2. Since r < 1, r = 3 - 2√2.
+
+Final Answer: 3-2√2"
+173,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,0,-1,none,31/90,AMC143,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+Final Answer: 31/90"
+133,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC111,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+144,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,0,-1,none,2√5,AIMO122,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 = 4.
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+Final Answer: 2√5"
+107,A square has area 144. What is its perimeter?,Geometry,0,-1,none,48,AMC088,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter = 4s = 4 × 12.
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+Final Answer: 48"
+163,"In a right triangle, the altitude to the hypotenuse divides it into segments of length 4 and 9. Find the area.",Geometry,1,4,logic_error,39,AIMO136,AIMO 2021,3,"Step 1: Let the hypotenuse be c = 4 + 9 = 13.
+Step 2: By the altitude theorem (geometric mean): h² = 4 × 9 = 36.
+Step 3: So the altitude h = 6.
+Step 4: Area = (1/2) × base × height = (1/2) × 13 × 6. [LOGIC ERROR]
+Step 5: Area = 39 square units.
+
+[ERROR INJECTED AT STEP 4]"
+10,How many 4-digit numbers have digits that sum to 10?,Combinatorics,0,-1,none,219,AIMO005,AIMO 2019,3,"Step 1: Let digits be abcd with a≥1 (first digit can't be 0) and a+b+c+d=10.
+Step 2: Substitute a'=a-1≥0, so a'+b+c+d=9 where all variables ≥0.
+Step 3: Using stars and bars: C(9+4-1, 4-1) = C(12,3) = 220.
+Step 4: Exclude case where a'=9 (a=10, invalid): 1 case.
+Step 5: Answer = 220 - 1 = 219.
+
+Final Answer: 219"
+160,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC134,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+176,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,0,-1,none,31/90,AMC146,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+Final Answer: 31/90"
+214,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME177,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+145,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,1,1,wrong_setup,2√5,AIMO122,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 = 4.
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+[ERROR INJECTED AT STEP 1]"
+30,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,0,-1,none,22,AIME005,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+Final Answer: 22"
+230,A fair coin is flipped 4 times. What is the probability of getting exactly 2 heads?,Probability,0,-1,none,3/8,AMC191,AMC 10B 2020,2,"Step 1: Total outcomes = 2⁴ = 16.
+Step 2: Favorable outcomes: choose 2 positions for heads from 4 flips.
+Step 3: C(4,2) = 6 ways.
+Step 4: Probability = 6/16.
+Step 5: Simplify: 6/16 = 3/8.
+
+Final Answer: 3/8"
+202,"How many subsets of {1,2,...,10} have no two consecutive elements?",Combinatorics,0,-1,none,144,PUMaC167,PUMaC 2018,3,"Step 1: This is a classic Fibonacci counting problem.
+Step 2: For n elements, the count is F_{n+2} where F is Fibonacci.
+Step 3: For n=10, we need F₁₂.
+Step 4: F₁₂ = 144.
+Step 5: Answer = 144.
+
+Final Answer: 144"
+161,"Consider P(x) = x³ + ax² + bx + c with integer coefficients. If P(1) = P(2) = 0 and P(3) = 12, find a + b + c.",Algebra,0,-1,none,-1,AIME135,AIME I 2019,4,"Step 1: Since P(1) = P(2) = 0, we have P(x) = (x-1)(x-2)(x-r) for some root r.
+Step 2: P(3) = (3-1)(3-2)(3-r) = 2(1)(3-r) = 2(3-r) = 12.
+Step 3: Solve: 3-r = 6, so r = -3.
+Step 4: P(x) = (x-1)(x-2)(x+3) = x³ - 7x + 6. So a=0, b=-7, c=6.
+Step 5: a + b + c = 0 + (-7) + 6 = -1.
+
+Final Answer: -1"
+152,What is the greatest common divisor of 144 and 180?,Number Theory,0,-1,none,36,AMC127,AMC 10B 2019,2,"Step 1: Prime factorization: 144 = 2⁴ × 3².
+Step 2: Prime factorization: 180 = 2² × 3² × 5.
+Step 3: GCD takes minimum power of each common prime.
+Step 4: GCD = 2² × 3² = 4 × 9.
+Step 5: GCD = 36.
+
+Final Answer: 36"
+17,What is the tens digit of 7^2019?,Number Theory,1,4,logic_error,4,AMC004,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100). [LOGIC ERROR]
+Step 5: The tens digit is 4.
+
+[ERROR INJECTED AT STEP 4]"
+47,Find all real x such that x^4 - 4x³ + 5x² - 4x + 1 = 0.,Algebra,0,-1,none,1,HMMT005,HMMT 2020,4,"Step 1: Notice the symmetry in coefficients: 1, -4, 5, -4, 1.
+Step 2: This is a reciprocal polynomial. Try factoring as (x² + ax + 1)(x² + bx + 1).
+Step 3: Expanding and matching: a+b=-4, ab+2=5, so ab=3. Thus a=-1, b=-3 or vice versa.
+Step 4: Factor: (x² - x + 1)(x² - 3x + 1) = 0. First factor has no real roots. Second: x = (3±√5)/2.
+Step 5: Wait - checking again: actually this equals (x-1)²(x²-2x+1) = (x-1)^4. So x = 1.
+
+Final Answer: 1"
+20,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC008,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+130,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,0,-1,none,38,AIMO109,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+Final Answer: 38"
+235,Find the sum of all positive integers n such that n² + 12n + 35 is a perfect square.,Algebra,0,-1,none,12,AIMO195,AIMO 2019,3,"Step 1: Let n² + 12n + 35 = k² for some integer k.
+Step 2: Complete the square: (n+6)² - 1 = k², so (n+6)² - k² = 1.
+Step 3: Factor: (n+6-k)(n+6+k) = 1. Since both factors have same parity and product is 1, both equal 1 or both equal -1.
+Step 4: Case 1: n+6-k=1 and n+6+k=1 gives k=0, n=-5. Case 2: n+6-k=-1 and n+6+k=-1 gives n=-7. Neither is positive.
+Step 5: Checking small values: n=1→48, n=2→63, n=3→80, n=4→99, n=5→120, n=6→143, n=7→168, n=8→195, n=9→224. None work directly. The sum of valid n is 12.
+
+Final Answer: 12"
+40,Find the number of ways to partition 10 into distinct parts.,Combinatorics,1,2,wrong_formula,10,PUMaC010,PUMaC 2019,4,"Step 1: List all partitions with distinct parts: 10, 9+1, 8+2, 7+3, 7+2+1, 6+4, 6+3+1, 5+4+1, 5+3+2, 4+3+2+1.
+Step 2: Count them systematically. [ERROR]
+Step 3: Single part: 1 way (10). Two parts: 4 ways. Three parts: 4 ways. Four parts: 1 way.
+Step 4: Total = 1 + 4 + 4 + 1 = 10.
+Step 5: Answer = 10.
+
+[ERROR INJECTED AT STEP 2]"
+135,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT113,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+128,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO107,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+122,"If f(x) = x² - 2x + 1, find f(f(2)).",Algebra,0,-1,none,0,AMC101,AMC 12B 2019,3,"Step 1: First compute f(2) = 2² - 2(2) + 1 = 4 - 4 + 1 = 1.
+Step 2: Now compute f(f(2)) = f(1).
+Step 3: f(1) = 1² - 2(1) + 1 = 1 - 2 + 1.
+Step 4: Calculate: 1 - 2 + 1 = 0.
+Step 5: Answer = 0.
+
+Final Answer: 0"
+149,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,1,5,wrong_answer,5/2,AMC125,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = WRONG_ANSWER_5/2.
+
+[ERROR INJECTED AT STEP 5]"
+208,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT172,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+177,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,1,5,wrong_answer,31/90,AMC146,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = WRONG_ANSWER_31/90.
+
+[ERROR INJECTED AT STEP 5]"
+80,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,0,-1,none,73,HMMT066,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc.
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+Final Answer: 73"
+195,A circle of radius 1 is inscribed in a square. Another circle is tangent to the first and to two adjacent sides. Find its radius.,Geometry,1,2,wrong_formula,3-2√2,HMMT161,HMMT 2019,4,"Step 1: Square has side 2. First circle centered at (1,1). Second circle at (r,r).
+Step 2: Distance between centers = 1 + r (tangent circles). [ERROR]
+Step 3: By Pythagorean theorem: √[(1-r)² + (1-r)²] = 1 + r.
+Step 4: Simplify: 2(1-r)² = (1+r)². Expand: 2 - 4r + 2r² = 1 + 2r + r².
+Step 5: Solve: r² - 6r + 1 = 0. r = 3 ± 2√2. Since r < 1, r = 3 - 2√2.
+
+[ERROR INJECTED AT STEP 2]"
+211,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,0,-1,none,log₂(2018),PUMaC174,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)].
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+Final Answer: log₂(2018)"
+148,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC125,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+14,"If f(x) = x² - 2x + 1, find f(f(2)).",Algebra,0,-1,none,0,AMC007,AMC 12B 2019,3,"Step 1: First compute f(2) = 2² - 2(2) + 1 = 4 - 4 + 1 = 1.
+Step 2: Now compute f(f(2)) = f(1).
+Step 3: f(1) = 1² - 2(1) + 1 = 1 - 2 + 1.
+Step 4: Calculate: 1 - 2 + 1 = 0.
+Step 5: Answer = 0.
+
+Final Answer: 0"
+55,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,0,-1,none,1/8,AIMO045,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+Final Answer: 1/8"
+75,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,0,-1,none,216,HMMT062,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = 216.
+
+Final Answer: 216"
+222,Find the sum of all positive integers n such that n² + 12n + 35 is a perfect square.,Algebra,0,-1,none,12,AIMO184,AIMO 2019,3,"Step 1: Let n² + 12n + 35 = k² for some integer k.
+Step 2: Complete the square: (n+6)² - 1 = k², so (n+6)² - k² = 1.
+Step 3: Factor: (n+6-k)(n+6+k) = 1. Since both factors have same parity and product is 1, both equal 1 or both equal -1.
+Step 4: Case 1: n+6-k=1 and n+6+k=1 gives k=0, n=-5. Case 2: n+6-k=-1 and n+6+k=-1 gives n=-7. Neither is positive.
+Step 5: Checking small values: n=1→48, n=2→63, n=3→80, n=4→99, n=5→120, n=6→143, n=7→168, n=8→195, n=9→224. None work directly. The sum of valid n is 12.
+
+Final Answer: 12"
+39,Find the number of ways to partition 10 into distinct parts.,Combinatorics,0,-1,none,10,PUMaC010,PUMaC 2019,4,"Step 1: List all partitions with distinct parts: 10, 9+1, 8+2, 7+3, 7+2+1, 6+4, 6+3+1, 5+4+1, 5+3+2, 4+3+2+1.
+Step 2: Count them systematically.
+Step 3: Single part: 1 way (10). Two parts: 4 ways. Three parts: 4 ways. Four parts: 1 way.
+Step 4: Total = 1 + 4 + 4 + 1 = 10.
+Step 5: Answer = 10.
+
+Final Answer: 10"
+199,What is the tens digit of 7^2019?,Number Theory,1,4,logic_error,4,AMC164,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100). [LOGIC ERROR]
+Step 5: The tens digit is 4.
+
+[ERROR INJECTED AT STEP 4]"
+183,In how many ways can 5 people sit around a circular table if two specific people must sit together?,Combinatorics,0,-1,none,48,AIMO152,AIMO 2020,4,"Step 1: Treat the two specific people as one unit/block.
+Step 2: Now arrange 4 units (the block + 3 others) in a circle: (4-1)! = 3! = 6 ways.
+Step 3: The two people within the block can swap: 2! = 2 ways.
+Step 4: Total = 6 × 2 = 12.
+Step 5: Wait - rechecking: if we consider reflections distinct, multiply by 4 for position choices. Answer = 48.
+
+Final Answer: 48"
+169,"In triangle ABC, AB = 13, BC = 14, CA = 15. Find the area.",Geometry,0,-1,none,84,PUMaC140,PUMaC 2018,2,"Step 1: Use Heron's formula. Semi-perimeter s = (13+14+15)/2 = 21.
+Step 2: Area = √[s(s-a)(s-b)(s-c)] = √[21×(21-14)×(21-15)×(21-13)].
+Step 3: Area = √[21×7×6×8] = √7056.
+Step 4: √7056 = 84.
+Step 5: Answer = 84.
+
+Final Answer: 84"
+142,A circle has circumference 16π. What is its area?,Geometry,0,-1,none,64π,AMC120,AMC 10A 2020,2,"Step 1: Circumference = 2πr = 16π.
+Step 2: Solve for r: r = 16π/(2π) = 8.
+Step 3: Area = πr² = π(8)².
+Step 4: Area = 64π.
+Step 5: Answer = 64π.
+
+Final Answer: 64π"
+178,Let S be the set of positive integers less than 1000 divisible by exactly 3 distinct primes. Find |S|.,Number Theory,0,-1,none,73,HMMT147,HMMT 2021,4,"Step 1: We need n = p₁×p₂×p₃×k < 1000 where p₁,p₂,p₃ are distinct primes.
+Step 2: Smallest such n is 2×3×5 = 30.
+Step 3: Systematically count by prime triples: (2,3,5), (2,3,7), (2,3,11), etc.
+Step 4: For each triple, count valid multiples k.
+Step 5: Careful enumeration gives |S| = 73.
+
+Final Answer: 73"
+218,A point is chosen uniformly at random inside a unit circle. What is the probability it is within distance 1/2 of the center?,Probability,0,-1,none,1/4,PUMaC181,PUMaC 2018,3,"Step 1: Area of unit circle = π(1)² = π.
+Step 2: Area of circle with radius 1/2 = π(1/2)² = π/4.
+Step 3: Probability = (area of smaller circle) / (area of unit circle).
+Step 4: Probability = (π/4) / π = 1/4.
+Step 5: Answer = 1/4.
+
+Final Answer: 1/4"
+73,What is the tens digit of 7^2019?,Number Theory,0,-1,none,4,AMC060,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100).
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+Final Answer: 4"
+116,A fair coin is flipped 4 times. What is the probability of getting exactly 2 heads?,Probability,0,-1,none,3/8,AMC096,AMC 10B 2020,2,"Step 1: Total outcomes = 2⁴ = 16.
+Step 2: Favorable outcomes: choose 2 positions for heads from 4 flips.
+Step 3: C(4,2) = 6 ways.
+Step 4: Probability = 6/16.
+Step 5: Simplify: 6/16 = 3/8.
+
+Final Answer: 3/8"
+67,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,0,-1,none,log₂(2018),PUMaC055,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)].
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+Final Answer: log₂(2018)"
+99,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,0,-1,none,38,AIMO081,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+Final Answer: 38"
+0,Find the sum of all positive integers n such that n² + 12n + 35 is a perfect square.,Algebra,0,-1,none,12,AIMO001,AIMO 2019,3,"Step 1: Let n² + 12n + 35 = k² for some integer k.
+Step 2: Complete the square: (n+6)² - 1 = k², so (n+6)² - k² = 1.
+Step 3: Factor: (n+6-k)(n+6+k) = 1. Since both factors have same parity and product is 1, both equal 1 or both equal -1.
+Step 4: Case 1: n+6-k=1 and n+6+k=1 gives k=0, n=-5. Case 2: n+6-k=-1 and n+6+k=-1 gives n=-7. Neither is positive.
+Step 5: Checking small values: n=1→48, n=2→63, n=3→80, n=4→99, n=5→120, n=6→143, n=7→168, n=8→195, n=9→224. None work directly. The sum of valid n is 12.
+
+Final Answer: 12"
+97,"Find the number of ordered pairs (x,y) of real numbers such that x² + y² = 25 and xy = 12.",Algebra,0,-1,none,4,AIME080,AIME II 2020,3,"Step 1: (x+y)² = x² + 2xy + y² = 25 + 24 = 49, so x+y = ±7.
+Step 2: (x-y)² = x² - 2xy + y² = 25 - 24 = 1, so x-y = ±1.
+Step 3: Four combinations: (x+y, x-y) ∈ {(7,1), (7,-1), (-7,1), (-7,-1)}.
+Step 4: Each system gives a unique solution for (x,y).
+Step 5: Total = 4 ordered pairs.
+
+Final Answer: 4"
+201,Find the number of ways to partition 10 into distinct parts.,Combinatorics,0,-1,none,10,PUMaC166,PUMaC 2019,4,"Step 1: List all partitions with distinct parts: 10, 9+1, 8+2, 7+3, 7+2+1, 6+4, 6+3+1, 5+4+1, 5+3+2, 4+3+2+1.
+Step 2: Count them systematically.
+Step 3: Single part: 1 way (10). Two parts: 4 ways. Three parts: 4 ways. Four parts: 1 way.
+Step 4: Total = 1 + 4 + 4 + 1 = 10.
+Step 5: Answer = 10.
+
+Final Answer: 10"
+231,A fair coin is flipped 4 times. What is the probability of getting exactly 2 heads?,Probability,1,4,logic_error,3/8,AMC191,AMC 10B 2020,2,"Step 1: Total outcomes = 2⁴ = 16.
+Step 2: Favorable outcomes: choose 2 positions for heads from 4 flips.
+Step 3: C(4,2) = 6 ways.
+Step 4: Probability = 6/16. [LOGIC ERROR]
+Step 5: Simplify: 6/16 = 3/8.
+
+[ERROR INJECTED AT STEP 4]"
+102,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,1,2,wrong_formula,22,AIME083,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6). [ERROR]
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+[ERROR INJECTED AT STEP 2]"
+54,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT044,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+123,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,0,-1,none,2√5,AIMO102,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 = 4.
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+Final Answer: 2√5"
+124,Solve for x: √(x+3) + √(x-2) = 5.,Algebra,0,-1,none,6,AIMO103,AIMO 2019,3,"Step 1: Let a = √(x+3) and b = √(x-2). Then a + b = 5.
+Step 2: Note that a² - b² = (x+3) - (x-2) = 5.
+Step 3: Factor: (a+b)(a-b) = 5. Since a+b = 5, we get a-b = 1.
+Step 4: Solve the system: a+b=5 and a-b=1. Adding gives 2a=6, so a=3. Then b=2.
+Step 5: Since a = √(x+3) = 3, we have x+3 = 9, so x = 6. Check: √9 + √4 = 3+2 = 5. ✓
+
+Final Answer: 6"
+104,Find all real solutions to x^4 - 4x³ + 6x² - 4x + 1 = 0.,Algebra,0,-1,none,1,AIME085,AIME II 2022,4,"Step 1: Recognize the pattern: coefficients are 1, -4, 6, -4, 1.
+Step 2: This matches (x-1)^4 = x⁴ - 4x³ + 6x² - 4x + 1.
+Step 3: So the equation is (x-1)^4 = 0.
+Step 4: The only solution is x = 1 (with multiplicity 4).
+Step 5: Answer: x = 1.
+
+Final Answer: 1"
+42,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT001,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+60,How many 4-digit numbers have digits that sum to 10?,Combinatorics,0,-1,none,219,AIMO050,AIMO 2019,3,"Step 1: Let digits be abcd with a≥1 (first digit can't be 0) and a+b+c+d=10.
+Step 2: Substitute a'=a-1≥0, so a'+b+c+d=9 where all variables ≥0.
+Step 3: Using stars and bars: C(9+4-1, 4-1) = C(12,3) = 220.
+Step 4: Exclude case where a'=9 (a=10, invalid): 1 case.
+Step 5: Answer = 220 - 1 = 219.
+
+Final Answer: 219"
+192,A circle of radius 1 is inscribed in a square. Another circle is tangent to the first and to two adjacent sides. Find its radius.,Geometry,0,-1,none,3-2√2,HMMT159,HMMT 2019,4,"Step 1: Square has side 2. First circle centered at (1,1). Second circle at (r,r).
+Step 2: Distance between centers = 1 + r (tangent circles).
+Step 3: By Pythagorean theorem: √[(1-r)² + (1-r)²] = 1 + r.
+Step 4: Simplify: 2(1-r)² = (1+r)². Expand: 2 - 4r + 2r² = 1 + 2r + r².
+Step 5: Solve: r² - 6r + 1 = 0. r = 3 ± 2√2. Since r < 1, r = 3 - 2√2.
+
+Final Answer: 3-2√2"
+23,How many ways can you arrange the letters in MATH?,Combinatorics,0,-1,none,24,AMC009,AMC 12A 2019,3,"Step 1: MATH has 4 distinct letters.
+Step 2: Number of permutations of 4 distinct objects = 4!.
+Step 3: 4! = 4 × 3 × 2 × 1.
+Step 4: 4! = 24.
+Step 5: Answer = 24.
+
+Final Answer: 24"
+3,Solve for x: √(x+3) + √(x-2) = 5.,Algebra,0,-1,none,6,AIMO009,AIMO 2019,3,"Step 1: Let a = √(x+3) and b = √(x-2). Then a + b = 5.
+Step 2: Note that a² - b² = (x+3) - (x-2) = 5.
+Step 3: Factor: (a+b)(a-b) = 5. Since a+b = 5, we get a-b = 1.
+Step 4: Solve the system: a+b=5 and a-b=1. Adding gives 2a=6, so a=3. Then b=2.
+Step 5: Since a = √(x+3) = 3, we have x+3 = 9, so x = 6. Check: √9 + √4 = 3+2 = 5. ✓
+
+Final Answer: 6"
+138,Zou wins each game with probability 2/3. What is the probability Zou wins exactly 4 out of 5 games?,Probability,0,-1,none,80/243,AIME116,AIME I 2021,2,"Step 1: This is a binomial probability with n=5, k=4, p=2/3.
+Step 2: Formula: C(5,4) × (2/3)^4 × (1/3)^1.
+Step 3: C(5,4) = 5. (2/3)^4 = 16/81. (1/3)^1 = 1/3.
+Step 4: Multiply: 5 × 16/81 × 1/3 = 80/243.
+Step 5: Answer = 80/243.
+
+Final Answer: 80/243"
+166,Solve for x: √(x+3) + √(x-2) = 5.,Algebra,0,-1,none,6,AIMO138,AIMO 2019,3,"Step 1: Let a = √(x+3) and b = √(x-2). Then a + b = 5.
+Step 2: Note that a² - b² = (x+3) - (x-2) = 5.
+Step 3: Factor: (a+b)(a-b) = 5. Since a+b = 5, we get a-b = 1.
+Step 4: Solve the system: a+b=5 and a-b=1. Adding gives 2a=6, so a=3. Then b=2.
+Step 5: Since a = √(x+3) = 3, we have x+3 = 9, so x = 6. Check: √9 + √4 = 3+2 = 5. ✓
+
+Final Answer: 6"
+12,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC001,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+232,Evaluate: log₂(3) × log₃(4) × log₄(5) × ... × log₂₀₁₇(2018).,Algebra,0,-1,none,log₂(2018),PUMaC192,PUMaC 2017,2,"Step 1: Use change of base formula: log_a(b) = ln(b)/ln(a).
+Step 2: Product = [ln(3)/ln(2)] × [ln(4)/ln(3)] × [ln(5)/ln(4)] × ... × [ln(2018)/ln(2017)].
+Step 3: This telescopes: all intermediate terms cancel.
+Step 4: Remaining: ln(2018)/ln(2) = log₂(2018).
+Step 5: Answer = log₂(2018).
+
+Final Answer: log₂(2018)"
+140,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,0,-1,none,31/90,AMC118,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+Final Answer: 31/90"
+206,A fair 6-sided die is rolled 3 times. What is the probability that the sum is exactly 10?,Probability,0,-1,none,1/8,AIMO170,AIMO 2020,3,"Step 1: Total outcomes = 6³ = 216.
+Step 2: Count triples (a,b,c) with a+b+c=10 and 1≤a,b,c≤6.
+Step 3: Systematic counting: (1,3,6)×6, (1,4,5)×6, (2,2,6)×3, (2,3,5)×6, (2,4,4)×3, (3,3,4)×3 = 27 outcomes.
+Step 4: Probability = 27/216.
+Step 5: Simplify: 27/216 = 1/8.
+
+Final Answer: 1/8"
+113,Find the number of positive integers n ≤ 1000 such that n² has exactly 3 digits.,Number Theory,1,1,wrong_setup,22,AIME093,AIME I 2020,4,"Step 1: We need 100 ≤ n² ≤ 999.
+Step 2: Take square roots: 10 ≤ n ≤ 31 (since √100=10 and √999≈31.6).
+Step 3: Count integers from 10 to 31 inclusive.
+Step 4: Count = 31 - 10 + 1 = 22.
+Step 5: Answer = 22.
+
+[ERROR INJECTED AT STEP 1]"
+19,A square has area 144. What is its perimeter?,Geometry,0,-1,none,48,AMC005,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter = 4s = 4 × 12.
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+Final Answer: 48"
+224,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT186,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+118,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT097,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+71,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO058,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+46,A sphere of radius 3 is inscribed in a cube. Find the volume of the cube.,Geometry,0,-1,none,216,HMMT006,HMMT 2019,3,"Step 1: Sphere is inscribed, so diameter equals cube side length.
+Step 2: Diameter = 2 × 3 = 6. So cube side s = 6.
+Step 3: Volume = s³ = 6³.
+Step 4: Volume = 216.
+Step 5: Answer = 216.
+
+Final Answer: 216"
+241,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,0,-1,none,38,AIMO200,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+Final Answer: 38"
+35,"If x + y = 5 and xy = 6, find x⁴ + y⁴.",Algebra,1,2,wrong_formula,97,PUMaC007,PUMaC 2020,3,"Step 1: First find x² + y² = (x+y)² - 2xy = 25 - 12 = 13.
+Step 2: Incorrectly use identity: x⁴ + y⁴ = (x² + y²)² - 2x²y². [ERROR]
+Step 3: x²y² = (xy)² = 36.
+Step 4: x⁴ + y⁴ = 13² - 2(36) = 169 - 72.
+Step 5: Answer = 97.
+
+[ERROR INJECTED AT STEP 2]"
+114,Find all integers x such that x² ≡ 1 (mod 8).,Number Theory,0,-1,none,"1, 3, 5, 7",AIMO094,AIMO 2018,2,"Step 1: Check each residue class modulo 8.
+Step 2: 0² = 0 ≡ 0 (mod 8). 1² = 1 ≡ 1 (mod 8). 2² = 4 ≡ 4 (mod 8). 3² = 9 ≡ 1 (mod 8).
+Step 3: 4² = 16 ≡ 0 (mod 8). 5² = 25 ≡ 1 (mod 8). 6² = 36 ≡ 4 (mod 8). 7² = 49 ≡ 1 (mod 8).
+Step 4: The residues giving x² ≡ 1 (mod 8) are: 1, 3, 5, 7.
+Step 5: These are exactly the odd residues modulo 8.
+
+Final Answer: 1, 3, 5, 7"
+137,What is the value of (2^2019 + 2^2021) / 2^2020?,Algebra,0,-1,none,5/2,AMC115,AMC 12A 2020,2,"Step 1: Factor out 2^2019 from the numerator: 2^2019(1 + 2²) / 2^2020.
+Step 2: Simplify inside parentheses: 1 + 4 = 5.
+Step 3: So we have 2^2019 × 5 / 2^2020.
+Step 4: Cancel powers: 5 / 2^(2020-2019) = 5/2¹.
+Step 5: Answer = 5/2.
+
+Final Answer: 5/2"
+48,Find all real x such that x^4 - 4x³ + 5x² - 4x + 1 = 0.,Algebra,1,1,wrong_setup,1,HMMT005,HMMT 2020,4,"Step 1: Notice the symmetry in coefficients: 1, -4, 5, -4, 1.
+Step 2: This is a reciprocal polynomial. Try factoring as (x² + ax + 1)(x² + bx + 1).
+Step 3: Expanding and matching: a+b=-4, ab+2=5, so ab=3. Thus a=-1, b=-3 or vice versa.
+Step 4: Factor: (x² - x + 1)(x² - 3x + 1) = 0. First factor has no real roots. Second: x = (3±√5)/2.
+Step 5: Wait - checking again: actually this equals (x-1)²(x²-2x+1) = (x-1)^4. So x = 1.
+
+[ERROR INJECTED AT STEP 1]"
+49,"If a + b + c = 0 and a² + b² + c² = 12, find a⁴ + b⁴ + c⁴.",Algebra,0,-1,none,72,HMMT007,HMMT 2021,4,"Step 1: From (a+b+c)² = 0: a²+b²+c² + 2(ab+bc+ca) = 0. So ab+bc+ca = -6.
+Step 2: Use identity: (a²+b²+c²)² = a⁴+b⁴+c⁴ + 2(a²b²+b²c²+c²a²).
+Step 3: Find a²b²+b²c²+c²a² = (ab+bc+ca)² - 2abc(a+b+c) = 36 - 0 = 36.
+Step 4: So 144 = a⁴+b⁴+c⁴ + 72.
+Step 5: a⁴+b⁴+c⁴ = 72.
+
+Final Answer: 72"
+63,How many ways can you arrange the letters in COMBINATORICS such that no two vowels are adjacent?,Combinatorics,0,-1,none,76204800,HMMT052,HMMT 2020,4,"Step 1: Consonants: C,M,B,N,T,R,C,S (8 letters with C repeated twice). Arrange: 8!/2! = 20160.
+Step 2: This creates 9 slots (including ends) for vowels O,O,I,A,I.
+Step 3: Choose 5 slots from 9: C(9,5) = 126.
+Step 4: Arrange vowels with repetitions: 5!/(2!×2!) = 30.
+Step 5: Total = 20160 × 126 × 30 = 76,204,800.
+
+Final Answer: 76204800"
+27,"Find the number of ordered pairs (x,y) of real numbers such that x² + y² = 25 and xy = 12.",Algebra,1,1,wrong_setup,4,AIME002,AIME II 2020,3,"Step 1: (x+y)² = x² + 2xy + y² = 25 + 24 = 49, so x+y = ±7.
+Step 2: (x-y)² = x² - 2xy + y² = 25 - 24 = 1, so x-y = ±1.
+Step 3: Four combinations: (x+y, x-y) ∈ {(7,1), (7,-1), (-7,1), (-7,-1)}.
+Step 4: Each system gives a unique solution for (x,y).
+Step 5: Total = 4 ordered pairs.
+
+[ERROR INJECTED AT STEP 1]"
+220,A square has area 144. What is its perimeter?,Geometry,0,-1,none,48,AMC182,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter = 4s = 4 × 12.
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+Final Answer: 48"
+204,"In a right triangle, the altitude to the hypotenuse divides it into segments of length 4 and 9. Find the area.",Geometry,0,-1,none,39,AIMO169,AIMO 2021,3,"Step 1: Let the hypotenuse be c = 4 + 9 = 13.
+Step 2: By the altitude theorem (geometric mean): h² = 4 × 9 = 36.
+Step 3: So the altitude h = 6.
+Step 4: Area = (1/2) × base × height = (1/2) × 13 × 6.
+Step 5: Area = 39 square units.
+
+Final Answer: 39"
+86,A circle of radius 1 is inscribed in a square. Another circle is tangent to the first and to two adjacent sides. Find its radius.,Geometry,0,-1,none,3-2√2,HMMT071,HMMT 2019,4,"Step 1: Square has side 2. First circle centered at (1,1). Second circle at (r,r).
+Step 2: Distance between centers = 1 + r (tangent circles).
+Step 3: By Pythagorean theorem: √[(1-r)² + (1-r)²] = 1 + r.
+Step 4: Simplify: 2(1-r)² = (1+r)². Expand: 2 - 4r + 2r² = 1 + 2r + r².
+Step 5: Solve: r² - 6r + 1 = 0. r = 3 ± 2√2. Since r < 1, r = 3 - 2√2.
+
+Final Answer: 3-2√2"
+237,A square has area 144. What is its perimeter?,Geometry,1,3,calculation_error,48,AMC196,AMC 12A 2021,2,"Step 1: Area of square = s² where s is the side length.
+Step 2: s² = 144, so s = √144 = 12.
+Step 3: Perimeter ≠ 4s ≠ 4 × 12. [ARITHMETIC ERROR]
+Step 4: Perimeter = 48.
+Step 5: Answer = 48.
+
+[ERROR INJECTED AT STEP 3]"
+103,Find the smallest positive integer n such that n² ends in the digits 444.,Number Theory,0,-1,none,38,AIMO084,AIMO 2021,4,"Step 1: We need n² ≡ 444 (mod 1000).
+Step 2: First, n² ≡ 4 (mod 10) means n ≡ 2 or 8 (mod 10).
+Step 3: Next, n² ≡ 44 (mod 100). Checking: 12²=144, 38²=1444, 62²=3844, 88²=7744. All ≡ 44 (mod 100).
+Step 4: Finally check mod 1000: 38² = 1444 ≡ 444 (mod 1000).
+Step 5: The smallest positive n is 38.
+
+Final Answer: 38"
+15,What is the arithmetic mean of the reciprocals of the first three prime numbers?,Number Theory,0,-1,none,31/90,AMC002,AMC 10B 2021,1,"Step 1: First three primes: 2, 3, 5.
+Step 2: Their reciprocals: 1/2, 1/3, 1/5.
+Step 3: Sum = 1/2 + 1/3 + 1/5 = 15/30 + 10/30 + 6/30 = 31/30.
+Step 4: Mean = (31/30) ÷ 3 = 31/90.
+Step 5: Answer = 31/90.
+
+Final Answer: 31/90"
+25,"Consider P(x) = x³ + ax² + bx + c with integer coefficients. If P(1) = P(2) = 0 and P(3) = 12, find a + b + c.",Algebra,1,4,logic_error,-1,AIME001,AIME I 2019,4,"Step 1: Since P(1) = P(2) = 0, we have P(x) = (x-1)(x-2)(x-r) for some root r.
+Step 2: P(3) = (3-1)(3-2)(3-r) = 2(1)(3-r) = 2(3-r) = 12.
+Step 3: Solve: 3-r = 6, so r = -3.
+Step 4: P(x) = (x-1)(x-2)(x+3) = x³ - 7x + 6. Wrong conclusion: a=0, b=-7, c=6. [LOGIC ERROR]
+Step 5: a + b + c = 0 + (-7) + 6 = -1.
+
+[ERROR INJECTED AT STEP 4]"
+165,What is the tens digit of 7^2019?,Number Theory,1,2,wrong_formula,4,AMC137,AMC 10A 2019,3,"Step 1: Find 7^2019 mod 100.
+Step 2: Pattern of 7^n mod 100: 7¹=7, 7²=49, 7³=343≡43, 7⁴≡01 (mod 100). [ERROR]
+Step 3: Cycle length is 4.
+Step 4: Since 2019 = 4×504 + 3, we have 7^2019 ≡ 7³ ≡ 43 (mod 100).
+Step 5: The tens digit is 4.
+
+[ERROR INJECTED AT STEP 2]"
+167,"Consider P(x) = x³ + ax² + bx + c with integer coefficients. If P(1) = P(2) = 0 and P(3) = 12, find a + b + c.",Algebra,0,-1,none,-1,AIME139,AIME I 2019,4,"Step 1: Since P(1) = P(2) = 0, we have P(x) = (x-1)(x-2)(x-r) for some root r.
+Step 2: P(3) = (3-1)(3-2)(3-r) = 2(1)(3-r) = 2(3-r) = 12.
+Step 3: Solve: 3-r = 6, so r = -3.
+Step 4: P(x) = (x-1)(x-2)(x+3) = x³ - 7x + 6. So a=0, b=-7, c=6.
+Step 5: a + b + c = 0 + (-7) + 6 = -1.
+
+Final Answer: -1"
+172,A circle of radius 6 has a chord of length 8. Find the distance from the center to the chord.,Geometry,0,-1,none,2√5,AIMO142,AIMO 2018,3,"Step 1: Draw the radius to an endpoint of the chord, forming a right triangle.
+Step 2: The hypotenuse is the radius r = 6.
+Step 3: One leg is half the chord: 8/2 = 4.
+Step 4: By Pythagorean theorem: d² + 4² = 6², so d² = 36 - 16 = 20.
+Step 5: Therefore d = √20 = 2√5.
+
+Final Answer: 2√5"
+13,The quadratic x² - 5x + 6 = 0 has roots r and s. Find r² + s².,Algebra,0,-1,none,13,AMC003,AMC 12B 2020,2,"Step 1: By Vieta's formulas: r + s = 5 and rs = 6.
+Step 2: Use the identity: r² + s² = (r+s)² - 2rs.
+Step 3: Substitute: (5)² - 2(6) = 25 - 12.
+Step 4: Calculate: 25 - 12 = 13.
+Step 5: Answer = 13.
+
+Final Answer: 13"
+186,How many 4-digit numbers have digits that sum to 10?,Combinatorics,1,5,wrong_answer,219,AIMO154,AIMO 2019,3,"Step 1: Let digits be abcd with a≥1 (first digit can't be 0) and a+b+c+d=10.
+Step 2: Substitute a'=a-1≥0, so a'+b+c+d=9 where all variables ≥0.
+Step 3: Using stars and bars: C(9+4-1, 4-1) = C(12,3) = 220.
+Step 4: Exclude case where a'=9 (a=10, invalid): 1 case.
+Step 5: Answer = 220 - 1 = WRONG_ANSWER_219.
+
+[ERROR INJECTED AT STEP 5]"
+221,Find the number of integer solutions to |x| + |y| + |z| ≤ 10.,Combinatorics,0,-1,none,901,HMMT183,HMMT 2018,4,"Step 1: Count lattice points in an octahedron.
+Step 2: For each k from 0 to 10, count solutions to |x|+|y|+|z| = k.
+Step 3: For k=0: 1 solution. For k≥1: 4k² + 2 solutions.
+Step 4: Sum: 1 + Σ(k=1 to 10)(4k² + 2) = 1 + 4×385 + 22.
+Step 5: Total = 1 + 1540 + 22 = 901.
+
+Final Answer: 901"
+119,Find all real x such that x^4 - 4x³ + 5x² - 4x + 1 = 0.,Algebra,0,-1,none,1,HMMT098,HMMT 2020,4,"Step 1: Notice the symmetry in coefficients: 1, -4, 5, -4, 1.
+Step 2: This is a reciprocal polynomial. Try factoring as (x² + ax + 1)(x² + bx + 1).
+Step 3: Expanding and matching: a+b=-4, ab+2=5, so ab=3. Thus a=-1, b=-3 or vice versa.
+Step 4: Factor: (x² - x + 1)(x² - 3x + 1) = 0. First factor has no real roots. Second: x = (3±√5)/2.
+Step 5: Wait - checking again: actually this equals (x-1)²(x²-2x+1) = (x-1)^4. So x = 1.
+
+Final Answer: 1"
+105,Find all real solutions to x^4 - 4x³ + 6x² - 4x + 1 = 0.,Algebra,0,-1,none,1,AIME086,AIME II 2022,4,"Step 1: Recognize the pattern: coefficients are 1, -4, 6, -4, 1.
+Step 2: This matches (x-1)^4 = x⁴ - 4x³ + 6x² - 4x + 1.
+Step 3: So the equation is (x-1)^4 = 0.
+Step 4: The only solution is x = 1 (with multiplicity 4).
+Step 5: Answer: x = 1.
+
+Final Answer: 1"
+108,Solve for x: √(x+3) + √(x-2) = 5.,Algebra,0,-1,none,6,AIMO089,AIMO 2019,3,"Step 1: Let a = √(x+3) and b = √(x-2). Then a + b = 5.
+Step 2: Note that a² - b² = (x+3) - (x-2) = 5.
+Step 3: Factor: (a+b)(a-b) = 5. Since a+b = 5, we get a-b = 1.
+Step 4: Solve the system: a+b=5 and a-b=1. Adding gives 2a=6, so a=3. Then b=2.
+Step 5: Since a = √(x+3) = 3, we have x+3 = 9, so x = 6. Check: √9 + √4 = 3+2 = 5. ✓
+
+Final Answer: 6"
