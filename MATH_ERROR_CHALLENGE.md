@@ -74,14 +74,11 @@ You are given **242 math problems** from AIMO, AMC, AIME, PUMaC, and HMMT compet
 
 ## File Structure
 
-**Files Provided:**
+**File Provided:**
 - `data.csv` (242 rows) - Complete dataset with all labels
 
-**Files to Generate:**
-Participants should run the Data Preparation script to generate:
-- `train.csv` (145 rows, 60%) - Training data with labels
-- `test.csv` (97 rows, 40%) - Test data without labels
-- `sample_submission.csv` (97 rows) - Submission template
+**Generate Your Own Split:**
+Run the Data Preparation code below to create train/test splits and submission template.
 
 ---
 
